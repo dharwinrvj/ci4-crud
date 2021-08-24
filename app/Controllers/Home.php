@@ -10,6 +10,7 @@ class Home extends BaseController
 	{
 		$data = [];
 		helper(['form', 'url']);
+		$data['title'] = 'CI4 CRUD';
 		$obj = new InformationModel;
 		if ($this->request->getMethod() == 'post') {
 			$rules = ['name' => 'required', 'age' => 'required|numeric', 'ph' => 'required|numeric|exact_length[10]', 'image' => 'uploaded[image]|max_size[image,1024]|ext_in[image,jpg,jpeg,png]'];
@@ -57,6 +58,7 @@ class Home extends BaseController
 	{
 		$data = [];
 		helper(['form', 'url']);
+		$data['title'] = 'CI4 Update';
 		$obj = new InformationModel;
 		if ($this->request->getMethod() == 'post') {
 			$rules = ['name' => 'required', 'age' => 'required|numeric', 'ph' => 'required|numeric|exact_length[10]', 'image' => 'uploaded[image]|max_size[image,1024]|ext_in[image,jpg,jpeg,png]'];

@@ -10,6 +10,7 @@ class Authentication extends BaseController
     {
         $data = [];
         helper(['form', 'url']);
+        $data['title'] = 'Login';
         if ($this->request->getMethod() == 'post') {
             $rules = ['email' => 'required|valid_email', 'pass' => 'required'];
             if ($this->validate($rules)) {
@@ -40,6 +41,7 @@ class Authentication extends BaseController
     {
         $data = [];
         helper(['form', 'url']);
+        $data['title'] = 'Reset Password';
         if ($this->request->getMethod() == 'post') {
             $rules = ['email' => 'required|valid_email', 'hint' => 'required', 'password' => 'required'];
             if ($this->validate($rules)) {
@@ -73,6 +75,7 @@ class Authentication extends BaseController
     {
         $data = [];
         helper(['form', 'url']);
+        $data['title'] = 'Register';
         if ($this->request->getMethod() == 'post') {
             $rules = ['email' => 'required|valid_email', 'pass' => 'required', 'hint' => 'required'];
             if ($this->validate($rules)) {
