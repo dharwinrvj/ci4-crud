@@ -1,6 +1,8 @@
 # ci4-crud
 ## CodeIgniter 4 CRUD
-## [Remote DB(For PHP and MySql)](https://www.000webhost.com/)
+### [MySql(Installation and Configuration)](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
+### [MySqlWorkbench](https://dev.mysql.com/downloads/workbench/)
+### [Remote DB(For PHP and MySql)](https://www.000webhost.com/)
 ## Demo:
 <img src="/demo_images/demo.gif">
 
