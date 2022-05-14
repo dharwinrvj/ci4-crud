@@ -34,7 +34,7 @@ class Database extends Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'root',
-		'password' => 'Localhost123@',
+		'password' => 'D123@localhost',
 		'database' => 'ci4crud',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
